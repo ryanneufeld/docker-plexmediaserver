@@ -1,4 +1,4 @@
-# 
+#
 # this file contains a number of global variables used
 # by the docker container and its scripts. update any
 # of these to be appropriate for your environment.
@@ -19,5 +19,5 @@ LOCAL_TV_DIR="/media/tv"
 LOCAL_PLEX_DIR="/data/plex"
 
 # any additional docker run options you may want.
-# example: --cpuset-cpus="0-6"
-DOCKER_OPTS="--cpuset-cpus="0-6" --memory=16G"
+# example: --cpuset-cpus="0-3" --memory=16G
+DOCKER_OPTS=""

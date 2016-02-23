@@ -17,8 +17,7 @@ function start_container() {
               --net=host                                       \
               --env=PLEX_SERVER_VERSION=${PLEX_SERVER_VERSION} \
               --env=PLEX_SERVER_ARCH=${PLEX_SERVER_ARCH}       \
-              --volume=${LOCAL_MOVIE_DIR}:/movies:ro           \
-              --volume=${LOCAL_TV_DIR}:/tv:ro                  \
+              --volume=${LOCAL_MEDIA_DIR}:/media:ro            \
               --volume=${LOCAL_PLEX_DIR}:/plex:rw              \
               --detach ${IMAGE_NAME}:latest > /dev/null
 }
